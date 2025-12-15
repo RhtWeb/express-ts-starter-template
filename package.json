@@ -1,12 +1,15 @@
 {
   "name": "mernspace-c-auth-service",
   "version": "1.0.0",
+  "type": "module",
   "description": "Auth Service",
   "main": "index.js",
   "scripts": {
     "dev": "tsc",
     "format:fix": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint ."
   },
   "keywords": [
     "auth"
@@ -15,8 +18,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.25.0",
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@types/node": "^25.0.2",
+    "eslint": "^9.39.2",
     "prettier": "3.7.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0"
   }
 }

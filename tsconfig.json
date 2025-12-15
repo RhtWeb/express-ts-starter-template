@@ -7,11 +7,12 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs", //nodenext
-    "target": "es2024", //esnext
+    "module": "nodenext", //nodenext
+    "target": "es2022", //esnext
+    "moduleResolution": "nodenext",
     // "types": [],
     // For nodejs:
-    "lib": ["es2024"], //esnext
+    "lib": ["es2022"], //esnext
     "types": ["node"],
     // and npm install -D @types/node
 
@@ -42,7 +43,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/**/*.ts"]
   // "include": ["src/**/*"],
   // "exclude": ["node_modules"]
 }
