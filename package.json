@@ -4,10 +4,16 @@
   "description": "Auth Service",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server.js"
+    "dev": "tsc"
   },
-  "keywords": ["auth"],
+  "keywords": [
+    "auth"
+  ],
   "author": "RhtWeb",
   "license": "ISC",
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.25.0",
+  "devDependencies": {
+    "@types/node": "^25.0.2",
+    "typescript": "^5.9.3"
+  }
 }
