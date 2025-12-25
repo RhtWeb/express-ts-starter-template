@@ -25,7 +25,7 @@
 
 ```bash
 git --version #Check if Git is already installed
-git clone https://github.com/your-org/express-ts-starter.git my-new-service #This creates a new folder with the repo name
+git clone https://github.com/your-org/express-ts-starter-template.git my-new-service #This creates a new folder with the repo name
 cd my-new-service #Move into the project directory
 rm -rf .git
 git init
@@ -123,13 +123,15 @@ pnpm add -D @types/node #[xyz.d.ts  type defination files in node]
 pnpm tsc --init  #[create tsconfig file]
 ```
 
-> ✅ **Use `tsx` for development**  
->  tsx watch src/server.ts
-> ✅ **Use `tsc + node` for production**
-> tsc --watch & node --watch dist/server.js
-> ❌ **Never run `.ts` directly with Node**
-
 ```text
+	✅ **Use `tsx` for development**  
+	tsx watch src/server.ts
+
+	✅ **Use `tsc + node` for production**
+	tsc --watch & node --watch dist/server.js
+
+❌ **Never run `.ts` directly with Node**
+
 NOTE:- You can use biomejs for linting and formatting
 ```
 
@@ -176,8 +178,8 @@ hence to optimize so that pre-commit command runs for only commited files, we wi
 	pnpm exec ❌ scripts
 	pnpm run  ✅ scripts
 	pnpm exec ✅ binaries
-  pre-commit → lint-staged → ESLint + Prettier
-  pre-push   → tests
+  	pre-commit → lint-staged → ESLint + Prettier
+  	pre-push   → tests
 ```
 
 ---
@@ -262,7 +264,7 @@ touch health.test.ts
 
 ```bash
 git remote -v
-git remote add template git@github.com:<username>/express-init-template.git
+git remote add template git@github.com:<username>/express-ts-starter-template.git
 git push template main
 ```
 
